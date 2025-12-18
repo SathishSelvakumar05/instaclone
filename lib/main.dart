@@ -1,4 +1,6 @@
 import 'package:alab/CommonFunctions/PushNotification.dart';
+import 'package:alab/Concepts/RefershToken/ApiService/LoginCubit.dart';
+import 'package:alab/Concepts/RefershToken/Screen/login_Ui.dart';
 import 'package:alab/Cubits/Network_Cubit.dart';
 import 'package:alab/Cubits/Network_State.dart';
 import 'package:alab/Cubits/User_Data_Cubit.dart';
@@ -35,6 +37,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider<UserCubit>(create: (context) => UserCubit(Connectivity())),
+        BlocProvider<LoginCubit>(create: (context) => LoginCubit()),
         BlocProvider<networkCubit>(
           create: (context) => networkCubit(connectivity: Connectivity()),
         ),
@@ -45,6 +48,7 @@ class MyApp extends StatelessWidget {
         builder: (context, child) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
+            // showPerformanceOverlay: true,
             title: 'Flutter Demo',
             builder: (context, widget) {
               return BlocListener<networkCubit, Network>(
@@ -74,7 +78,7 @@ class MyApp extends StatelessWidget {
                 child: widget!,
               );
             },
-            home: AutoLoginScreen(),
+            home: LoginUi(),
           );
         },
       ),

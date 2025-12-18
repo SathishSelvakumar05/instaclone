@@ -34,7 +34,8 @@ class UserCubit extends Cubit<userDataState> {
   Future<void> getUserData(int count, int page) async {
     try {
       if (hasNetwork) {
-        final response = await dio.get(ApiUrls.fetchDataURL(count, page),options: Options(
+        final response = await dio.get(ApiUrls.fetchDataURL(count, page),
+          options: Options(
           headers: {"Accept": "application/json"},
           validateStatus: (status) => status! < 500,
         ),);
