@@ -1,6 +1,10 @@
 import 'package:alab/CommonFunctions/PushNotification.dart';
 import 'package:alab/Concepts/RefreshToken/ApiService/LoginCubit.dart';
-import 'package:alab/Concepts/RefreshToken/Screen/login_Ui.dart';
+import 'package:alab/InstaClone/Auth/Cubit/AuthCubit.dart';
+import 'package:alab/InstaClone/Auth/Repository/AuthRepository.dart';
+import 'package:alab/InstaClone/Auth/View/InstaLoginScreen.dart';
+import 'package:alab/InstaClone/Reels/Cubit/ReelCubit.dart';
+import 'package:alab/InstaClone/Reels/Repository/ReelRepository.dart';
 
 import 'package:alab/Cubits/Network_Cubit.dart';
 import 'package:alab/Cubits/Network_State.dart';
@@ -42,6 +46,8 @@ class MyApp extends StatelessWidget {
         BlocProvider<networkCubit>(
           create: (context) => networkCubit(connectivity: Connectivity()),
         ),
+        BlocProvider<AuthCubit>(create: (_) => AuthCubit(AuthRepository())),
+        BlocProvider<ReelCubit>(create: (_) => ReelCubit(ReelRepository())),
       ],
       child: ScreenUtilInit(
         designSize: Size(360, 690),
@@ -79,7 +85,7 @@ class MyApp extends StatelessWidget {
                 child: widget!,
               );
             },
-            home: LoginUi(),
+            home: const InstaLoginScreen(),
           );
         },
       ),
