@@ -50,7 +50,7 @@ dev_dependencies:
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/Images/applogo.jpg"
+  image_path: "assets/Images/alab.jpg"
 
 flutter:
   uses-material-design: true
