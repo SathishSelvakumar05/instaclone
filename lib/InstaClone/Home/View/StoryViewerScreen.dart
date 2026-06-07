@@ -77,7 +77,6 @@ class _StoryViewerScreenState extends State<StoryViewerScreen>
     final story = widget.stories[_currentIndex];
     final screenWidth = MediaQuery.of(context).size.width;
     final safeTop = MediaQuery.of(context).padding.top;
-    // Tap zones start below: safe area top + progress bar row + user info row ≈ 90dp
     final tapZoneTop = safeTop + 90.h;
 
     return Scaffold(
@@ -85,7 +84,6 @@ class _StoryViewerScreenState extends State<StoryViewerScreen>
       body: Stack(
         fit: StackFit.expand,
         children: [
-          // Story image with crossfade transition
           AnimatedSwitcher(
             duration: const Duration(milliseconds: 200),
             child: Image.network(
@@ -115,7 +113,6 @@ class _StoryViewerScreenState extends State<StoryViewerScreen>
             ),
           ),
 
-          // Top gradient for header readability
           Container(
             height: tapZoneTop + 20,
             decoration: const BoxDecoration(
@@ -127,7 +124,6 @@ class _StoryViewerScreenState extends State<StoryViewerScreen>
             ),
           ),
 
-          // Bottom gradient for future use
           Positioned(
             bottom: 0,
             left: 0,
@@ -144,7 +140,6 @@ class _StoryViewerScreenState extends State<StoryViewerScreen>
             ),
           ),
 
-          // Left tap zone — goes to previous story (below header)
           Positioned(
             top: tapZoneTop,
             left: 0,
@@ -159,7 +154,6 @@ class _StoryViewerScreenState extends State<StoryViewerScreen>
             ),
           ),
 
-          // Right tap zone — goes to next story (below header)
           Positioned(
             top: tapZoneTop,
             right: 0,
@@ -174,13 +168,11 @@ class _StoryViewerScreenState extends State<StoryViewerScreen>
             ),
           ),
 
-          // Header: progress bars + user info (topmost layer)
           SafeArea(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
-                // Progress bars
                 Padding(
                   padding:
                       EdgeInsets.symmetric(horizontal: 8.w, vertical: 6.h),
@@ -212,7 +204,6 @@ class _StoryViewerScreenState extends State<StoryViewerScreen>
                   ),
                 ),
 
-                // User info row
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 8.w),
                   child: Row(

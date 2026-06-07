@@ -44,10 +44,7 @@ class _InstaHomeScreenState extends State<InstaHomeScreen> {
   }
 
   void _openStoryViewer(int storyListIndex) {
-    // Filter out the own-story so the viewer only shows other users' stories.
     final viewable = _stories.where((s) => !s.isOwn).toList();
-    // storyListIndex is the position in _stories (own story is at 0),
-    // so subtract 1 to get the viewer index.
     final viewerIndex = (storyListIndex - 1).clamp(0, viewable.length - 1);
     Navigator.push(
       context,

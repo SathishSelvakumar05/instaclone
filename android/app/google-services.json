@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "469642209178",
-    "project_id": "alab-ebc7c",
-    "storage_bucket": "alab-ebc7c.firebasestorage.app"
+    "project_number": "1023933723224",
+    "project_id": "instaclone-16cf4",
+    "storage_bucket": "instaclone-16cf4.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:469642209178:android:725c060f197263e334bc23",
+        "mobilesdk_app_id": "1:1023933723224:android:526213baf040d0de29902d",
         "android_client_info": {
           "package_name": "com.example.alab"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBvM6M4QYH2L_oqWenF2ly1Sep4akTBdf8"
+          "current_key": "AIzaSyD_iAlL64MXr1ZQXgF3hHV161ND3NSguZ8"
         }
       ],
       "services": {

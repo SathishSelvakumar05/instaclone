@@ -28,7 +28,6 @@ class AuthRepository {
           .set(user.toFirestore());
       return user;
     } catch (e) {
-      // Rollback auth user if Firestore write fails
       await credential.user?.delete();
       rethrow;
     }

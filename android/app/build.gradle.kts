@@ -42,15 +42,14 @@ android {
         jvmTarget = "11"
     }
 
-    signingConfigs {
-        create("release") {
-
-            storeFile = file(keystoreProperties["signIn.File"]?.toString() ?: "")
-            storePassword = keystoreProperties["signIn.storePassword"]?.toString() ?: ""
-            keyAlias = keystoreProperties["signIn.keyAlias"]?.toString() ?: ""
-            keyPassword = keystoreProperties["signIn.keyPassword"]?.toString() ?: ""
-        }
-    }
+//    signingConfigs {
+//        create("release") {
+//            storeFile = file(keystoreProperties["signIn.File"]?.toString() ?: "")
+//            storePassword = keystoreProperties["signIn.storePassword"]?.toString() ?: ""
+//            keyAlias = keystoreProperties["signIn.keyAlias"]?.toString() ?: ""
+//            keyPassword = keystoreProperties["signIn.keyPassword"]?.toString() ?: ""
+//        }
+//    }
 
     defaultConfig {
         applicationId = "com.example.alab"
@@ -63,7 +62,7 @@ android {
     buildTypes {
         release {
             // Use your real release keystore
-            signingConfig = signingConfigs.getByName("release")
+            signingConfig = signingConfigs.getByName("debug")
 
             isMinifyEnabled = false
             isShrinkResources = false

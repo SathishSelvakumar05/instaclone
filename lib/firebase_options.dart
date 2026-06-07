@@ -41,48 +41,46 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCjDhid_XyPNY93im0-mpMkDweoea0beaU',
-    appId: '1:469642209178:web:d51278b36507907834bc23',
-    messagingSenderId: '469642209178',
-    projectId: 'alab-ebc7c',
-    authDomain: 'alab-ebc7c.firebaseapp.com',
-    storageBucket: 'alab-ebc7c.firebasestorage.app',
-    measurementId: 'G-94THY1PVFM',
+    apiKey: 'AIzaSyCVi1AOWAyZ5Rg_H0-96zfS_juWIn62ohY',
+    appId: '1:1023933723224:web:a69a6c487bc3f98829902d',
+    messagingSenderId: '1023933723224',
+    projectId: 'instaclone-16cf4',
+    authDomain: 'instaclone-16cf4.firebaseapp.com',
+    storageBucket: 'instaclone-16cf4.firebasestorage.app',
+    measurementId: 'G-444J5QNVG0',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBvM6M4QYH2L_oqWenF2ly1Sep4akTBdf8',
-    appId: '1:469642209178:android:725c060f197263e334bc23',
-    messagingSenderId: '469642209178',
-    projectId: 'alab-ebc7c',
-    storageBucket: 'alab-ebc7c.firebasestorage.app',
+    apiKey: 'AIzaSyD_iAlL64MXr1ZQXgF3hHV161ND3NSguZ8',
+    appId: '1:1023933723224:android:526213baf040d0de29902d',
+    messagingSenderId: '1023933723224',
+    projectId: 'instaclone-16cf4',
+    storageBucket: 'instaclone-16cf4.firebasestorage.app',
   );
-
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBuQb29WgmCK5NCxAdQC_UiFtY-nvkq0Y8',
-    appId: '1:469642209178:ios:0d5b5b36291a8ba134bc23',
-    messagingSenderId: '469642209178',
-    projectId: 'alab-ebc7c',
-    storageBucket: 'alab-ebc7c.firebasestorage.app',
+    apiKey: 'AIzaSyCzV4G9Ie2oucVKcTgv-ujQuqJKCHsPor0',
+    appId: '1:1023933723224:ios:14e976fe68ff9ac329902d',
+    messagingSenderId: '1023933723224',
+    projectId: 'instaclone-16cf4',
+    storageBucket: 'instaclone-16cf4.firebasestorage.app',
     iosBundleId: 'com.example.alab',
   );
-
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBuQb29WgmCK5NCxAdQC_UiFtY-nvkq0Y8',
-    appId: '1:469642209178:ios:0d5b5b36291a8ba134bc23',
-    messagingSenderId: '469642209178',
-    projectId: 'alab-ebc7c',
-    storageBucket: 'alab-ebc7c.firebasestorage.app',
+    apiKey: 'AIzaSyCzV4G9Ie2oucVKcTgv-ujQuqJKCHsPor0',
+    appId: '1:1023933723224:ios:14e976fe68ff9ac329902d',
+    messagingSenderId: '1023933723224',
+    projectId: 'instaclone-16cf4',
+    storageBucket: 'instaclone-16cf4.firebasestorage.app',
     iosBundleId: 'com.example.alab',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCjDhid_XyPNY93im0-mpMkDweoea0beaU',
-    appId: '1:469642209178:web:117b9c369f0e703434bc23',
-    messagingSenderId: '469642209178',
-    projectId: 'alab-ebc7c',
-    authDomain: 'alab-ebc7c.firebaseapp.com',
-    storageBucket: 'alab-ebc7c.firebasestorage.app',
-    measurementId: 'G-ZWJMCQ800X',
+    apiKey: 'AIzaSyCVi1AOWAyZ5Rg_H0-96zfS_juWIn62ohY',
+    appId: '1:1023933723224:web:e104dc5d5864f6f729902d',
+    messagingSenderId: '1023933723224',
+    projectId: 'instaclone-16cf4',
+    authDomain: 'instaclone-16cf4.firebaseapp.com',
+    storageBucket: 'instaclone-16cf4.firebasestorage.app',
+    measurementId: 'G-F2FW9XCMMR',
   );
 }

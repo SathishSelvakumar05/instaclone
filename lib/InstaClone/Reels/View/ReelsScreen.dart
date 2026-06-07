@@ -55,7 +55,6 @@ class _ReelsScreenState extends State<ReelsScreen> {
     setState(() => _currentPage = index);
     _controllers[index]?.play();
 
-    // Pre-init adjacent video
     final next = index + 1;
     if (next < reels.length && !_controllers.containsKey(next)) {
       _initController(reels[next].videoUrl, next);
