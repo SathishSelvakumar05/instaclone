@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:alab/Constants/ApiConstants.dart';
 import 'package:alab/Cubits/User_Data_State.dart';
 import 'package:alab/LocalStorage/CRUD/User_CRUD.dart';
@@ -34,11 +33,13 @@ class UserCubit extends Cubit<userDataState> {
   Future<void> getUserData(int count, int page) async {
     try {
       if (hasNetwork) {
-        final response = await dio.get(ApiUrls.fetchDataURL(count, page),
+        final response = await dio.get(
+          ApiUrls.fetchDataURL(count, page),
           options: Options(
-          headers: {"Accept": "application/json"},
-          validateStatus: (status) => status! < 500,
-        ),);
+            headers: {"Accept": "application/json"},
+            validateStatus: (status) => status! < 500,
+          ),
+        );
         final data = response.data;
 
         final List<UserData> dataList = data
