@@ -7,7 +7,7 @@ import 'InstaRegisterScreen.dart';
 import '../../Home/View/InstaHomeScreen.dart';
 
 class InstaLoginScreen extends StatefulWidget {
-  const InstaLoginScreen({super.key});
+  const  InstaLoginScreen({super.key});
 
   @override
   State<InstaLoginScreen> createState() => _InstaLoginScreenState();
